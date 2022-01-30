@@ -1,0 +1,1 @@
+- [] How to convert whole string column into int datatype?

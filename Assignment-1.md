@@ -51,6 +51,7 @@ select count(*) from (select listing_id, sum(CASE WHEN available = 't' THEN 1 EL
 ```sql
 select listing_id, max(price), min(price), avg(price) from airbnb_calendar group by listing_id;
 ```
+<img src = "./media/max_min_avg.png">
 
 
 6. Extract properties with an average price of more than $500
@@ -58,3 +59,4 @@ select listing_id, max(price), min(price), avg(price) from airbnb_calendar group
 ```sql
 select listing_id, avg(price) as average from airbnb_calendar group by listing_id having average>500;
 ```
+<img src = "./media/over_500.png">
